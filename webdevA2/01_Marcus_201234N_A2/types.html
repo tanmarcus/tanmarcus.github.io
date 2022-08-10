@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/types.css" />
+    <script src="js/script.js" defer></script>
+    <!-- <script src="js/types.js" defer></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="nav-header">Bicycles</h1>
+                <div class="menu">
+                    <a href="index.html"><span>Home</span></a>
+                    <a class="active" href="#types"><span>Bikes</span></a>
+                    <a href="components.html"><span>Components</span></a>
+                    <a href="benefits.html"><span>Health </span></a>
+                </div>
+    
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="index.html"><span>Home</span></a>
+        <a class="active" href="#types"><span>Bikes</span></a>
+        <a href="components.html"><span>Components</span></a>
+        <a href="benefits.html"><span>Health</span></a>
+    </nav>
+    
+    <div class="container">
+        <div class="header-container">
+            <div id="header-text-column">
+                <h1 class="header-text">Bicycle Types</h1>
+                <h3 id="subheader-text">
+                    The various types of bicycles that are available today.
+                </h3>
+            </div>
+        </div>
+
+        <div class="bookmark-container">
+            <a class="bookmark" href="#road-preview"><img class="bookmark" src="./images/downarrow.png"></a>
+        </div>
+        
+        <div class="reveal">
+            
+            <div class="page">
+                <div id="road-preview">
+                    <h2>Road Bike</h2>
+                    <img id="road-img" src="images/road_bike.jpg" />
+                    <div class="button large popup-button" data-target="#popup-road">Learn more</div>
+                </div>
+                <div id="mountain-preview">
+                    <h2>Mountain Bike</h2>
+                    <img id="mountain-img" src="images/mountain_bike.jpg"/>
+                    <div class="button large popup-button" data-target="#popup-mountain">Learn more</div>
+                </div>
+                <div id="foldable-preview">
+                    <h2>Foldable Bike</h2>
+                    <img id="foldable-img" src="images/foldable_bike.jpg"/>
+                    <div class="button large popup-button" data-target="#popup-foldable">Learn more</div>
+                </div>
+            </div>
+    
+            <div class="page">
+                <div id="hybrid-preview">
+                    <h2>Hybrid Bike</h2>
+                    <img id="hybrid-img" src="images/hybrid_bike.png"/>
+                    <div class="button large popup-button" data-target="#popup-Hybrid">Hybrid Bike</div>
+                </div>
+                <div id="ebike-preview">
+                    <h2>E-Bike</h2>
+                    <img id="ebike-img" src="images/ebike.png"/>
+                    <div class="button large popup-button" data-target="#popup-ebike">E-Bike</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="popup" id="popup-road">
+            <div class="popup-overlay popup-button" data-target="#popup-road"></div>
+            <div class="popup-inner">
+                <h2>Road Bikes</h2>
+                <!-- <h3>Road Bike</h3> -->
+                <img id="road-img" src="images/road_bike.jpg" />
+                <p>
+                    A road bike is personally my favourite type of bike. They are best identified by their drop or turned-down 
+                    handlebars and skinny tires. The downward-curving handlebars are usually super lightweight that help put 
+                    you in an aerodynamic position. The lightweight frame makes this type of bicycle particularly good for numerous 
+                    pavement uses including racing, touring, fitness riding, long-distance rides and daily commuting.
+                </p>
+                <p>
+                    The large, thin tires allow you to glide the bike along various terrains with zero to little effort. 
+                    If you are supremely concerned about speed, varied options for hand and riding positions, and an efficient 
+                    transference of energy into propelling the bike forward, a road bike is the best option for you.
+                 </p>
+                <button class="button popup-button" data-target="#popup-road">Close</button>
+            </div>
+        </div>
+    
+        <div class="popup" id="popup-mountain">
+            <div class="popup-overlay popup-button" data-target="#popup-mountain"></div>
+            <div class="popup-inner">
+                <h2>Mountain Bikes</h2>
+                <img id="mountain-img" src="images/mountain_bike.jpg"/>
+                <p>
+                    This bike is designed with excellent braking systems and shock-absorbing features that can easily handle 
+                    serious bumps, rocks, dirt trails, roots and ruts.  Mountain bikes are meant for dealing with steeper terrain 
+                    which is why most of them consist of lower gears as compared to most other road bikes.
+                </p>
+                <p>
+                    They usually have 26-inch or 29-inch wide knobby tires that make them function amazingly well over obstacles and 
+                    in loose dirt. They also consist of rugged components and frames, flat handlebars and suspension in order to assist 
+                    cyclists in navigating rocky mountain hills.
+                </p>
+                <button class="button popup-button" data-target="#popup-mountain">Close</button>
+            </div>
+        </div>
+    
+        <div class="popup" id="popup-foldable">
+            <div class="popup-overlay popup-button" data-target="#popup-foldable"></div>
+            <div class="popup-inner">
+                <h2>Foldable Bikes</h2>
+                <img id="foldable-img" src="images/foldable_bike.jpg"/>
+                <p>
+                    Folding bikes are believed to be excellent travel companions. As the name suggests, they fold super easily and smoothly, 
+                    allowing them to be able to effortlessly fit on a boat, in the trunk of a car or on a subway. They can even be folded and 
+                    carried in a carrying bag which makes them extremely convenient for commuters who have limited storage space at home or elsewhere.
+                </p>
+                <p>
+                    A few overriding features of folding bikes include smaller wheels, with most of them being 20-inches, making it easy for the bike 
+                    to get over bumps and potholes in order to provide you with a smooth ride. Another great feature is that they have adjustable functions 
+                    on the folding frame, handlebar and saddle, all which allow an easier folding process. Many also have adjustable latches that help the bike 
+                    collapse easily.
+                </p>
+                <button class="button popup-button" data-target="#popup-foldable">Close</button>
+            </div>
+        </div>
+        <div class="popup" id="popup-Hybrid">
+            <div class="popup-overlay popup-button" data-target="#popup-Hybrid"></div>
+            <div class="popup-inner">
+                <h2>Hybrid Bikes</h2>
+                <img id="hybrid-img" src="images/hybrid_bike.png"/>
+                <p>
+                    Hybrid bikes are best described as a mix of road, mountain and touring bike designs, making them more of “do-it-all” kind of bikes that cater to 
+                    a wide range of uses. These bikes usually sport a combination of large road bike sized wheels that make them work amazingly well on both paved trails 
+                    and smooth dirt. They also feature a flat bar and a heads-up ride to ensure better view and comfort while riding.
+                </p>
+                <p>
+                    Many hybrid bikes that are considered as commuter-friendly models include fenders, racks and lighting systems. However, it is important to note that no 
+                    two hybrid bikes are entirely same so you must choose one according to your requirements and the type of riding you plan on doing.
+                </p>
+                <button class="button popup-button" data-target="#popup-Hybrid">Close</button>
+            </div>
+        </div>
+        <div class="popup" id="popup-ebike">
+            <div class="popup-overlay popup-button" data-target="#popup-ebike"></div>
+            <div class="popup-inner">
+                <h2>E-Bikes</h2>
+                <img id="ebike-img" src="images/ebike.png"/>
+                <p>
+                    These bikes include an electric motor which you can charge by plugging it into a regular outlet.  When you peddle, the electric motor provides an assist 
+                    so that you go faster and hills are made easier.
+                </p>
+                <p>
+                    Many types of bicycles are available in electric versions including mountain bikes, road bikes and hybrid bikes (for commuting).
+                </p>
+                <button class="button popup-button" data-target="#popup-ebike">Close</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<!-- <div id="road-container">
+    <div id="road-text-column">
+        <h1 id="road-header-text">Road Bikes</h1>
+        <p id="road-subheader-text">
+            A road bike is personally my favourite type of bike. They are best identified by their drop or turned-down handlebars and skinny tires. 
+            The downward-curving handlebars are usually super lightweight that help put you in an aerodynamic 
+            position. The lightweight frame makes this type of bicycle particularly good for numerous pavement 
+            uses including racing, touring, fitness riding, long-distance rides and daily commuting.
+        </p>
+        <p id="road-subheader-text">
+            The large, thin tires allow you to glide the bike along various terrains with zero to little effort. 
+            If you are supremely concerned about speed, varied options for hand and riding positions, and an efficient 
+            transference of energy into propelling the bike forward, a road bike is the best option for you.
+        </p>
+    </div>
+    <img id="road-img" src="images/road_bike.jpg"/>
+</div>
+
+<div id="mountain-container">
+    <img id="mountain-img" src="images/mountain_bike.jpg"/>
+    <div id="mountain-text-column">
+        <h1 id="mountain-header-text">Mountain Bikes</h1>
+        <p id="mountain-subheader-text">
+            This bike is designed with excellent braking systems and shock-absorbing features that can easily handle 
+            serious bumps, rocks, dirt trails, roots and ruts.  Mountain bikes are meant for dealing with steeper terrain 
+            which is why most of them consist of lower gears as compared to most other road bikes.
+        </p>
+        <p id="mountain-subheader-text">
+            They usually have 26-inch or 29-inch wide knobby tires that make them function amazingly well over obstacles and 
+            in loose dirt. They also consist of rugged components and frames, flat handlebars and suspension in order to assist 
+            cyclists in navigating rocky mountain hills.
+        </p>
+    </div>
+</div>
+<div id="foldable-container">
+    <div id="foldable-text-column">
+        <h1 id="foldable-header-text">Foldable Bikes</h1>
+        <p id="foldable-subheader-text">
+            Folding bikes are believed to be excellent travel companions. As the name suggests, they fold super easily and smoothly, 
+            allowing them to be able to effortlessly fit on a boat, in the trunk of a car or on a subway. They can even be folded and 
+            carried in a carrying bag which makes them extremely convenient for commuters who have limited storage space at home or elsewhere.
+        </p>
+        <p id="foldable-subheader-text">
+            A few overriding features of folding bikes include smaller wheels, with most of them being 20-inches, making it easy for the bike 
+            to get over bumps and potholes in order to provide you with a smooth ride. Another great feature is that they have adjustable functions 
+            on the folding frame, handlebar and saddle, all which allow an easier folding process. Many also have adjustable latches that help the bike 
+            collapse easily.
+        </p>
+    </div>
+    <img id="foldable-img" src="images/foldable_bike.jpg"/>
+</div> -->

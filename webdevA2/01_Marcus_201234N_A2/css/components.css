@@ -1,0 +1,179 @@
+#frame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frame-container, #drivetrain-container, #wheels-container, #tires-container {
+    padding: 50px;
+}
+
+#drivetrain-container, #wheels-container, #tires-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#drivetrain-text-column, #wheels-text-column, #tires-text-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* header text bottom spaces */
+#frame-header-text, #drivetrain-header-text, #wheels-header-text, #tires-header-text {
+    margin-bottom: 40px;
+}
+
+/* space between subheader paragraphs */
+#frame-subheader-text, #drivetrain-subheader-text, #wheels-subheader-text, #tires-subheader-text {
+    margin-bottom: 30px;
+}
+
+#frame-img, #drivetrain-img {
+    width: 50%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#wheels-img, #tires-img {
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#wheels-tires-header {
+    text-align: center;
+}
+
+@media screen and (max-width:721px){
+    #drivetrain-container, #wheels-container, #tires-container {
+        flex-direction: column;
+    }
+    #frame-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #drivetrain-text-column, #wheels-text-column, #tires-text-column {
+        width: 85%;
+    }
+    #drivetrain-img, #wheels-img, #tires-img{
+        width: 60%;
+        height: 75%;
+        order: 2;
+    }
+}
+@media screen and (max-width:481px){
+    #drivetrain-img, #wheels-img, #tires-img{
+        width: 90%;
+        height: 100%;
+    }
+}
+/* frame image slideshow */
+#slideshow {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* slideshow */
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* for manual slide nav */
+.nav-manual {
+    position: relative;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--primary);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: var(--primary);
+}
+/* how far the slides move */
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* auto nav */
+.nav-auto {
+    position: relative;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.nav-auto div {
+    border: 2px solid var(--primary);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.nav-auto .auto-btn1 {
+    background: var(--primary);
+}
+
+#radio2:checked~.nav-auto .auto-btn2 {
+    background: var(--primary);
+}
+
+#radio3:checked~.nav-auto .auto-btn3 {
+    background: var(--primary);
+}

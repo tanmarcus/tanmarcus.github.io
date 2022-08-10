@@ -1,0 +1,45 @@
+#mental-container, #immunity-container, #weight-container, #muscle-container, #sleep-container{
+    padding: 50px;
+}
+#mental-container, #immunity-container, #weight-container, #muscle-container, #sleep-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#mental-text-column, #immunity-text-column, #weight-text-column, #muscle-text-column, #sleep-text-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#mental-header-text, #immunity-header-text, #weight-header-text, #muscle-header-text, #sleep-header-text{
+    margin-bottom: 40px;
+}
+#mental-subheader-text, #immunity-subheader-text, #weight-subheader-text, #muscle-subheader-text, #sleep-subheader-text{
+    margin-bottom: 30px;
+}
+#mental-img, #immunity-img, #weight-img, #muscle-img, #sleep-img{
+    width: 30%;
+    height: 35%; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+@media screen and (max-width:721px){
+    #mental-container, #immunity-container, #weight-container, #muscle-container, #sleep-container{
+        flex-direction: column;
+    }
+    #mental-text-column, #immunity-text-column, #weight-text-column, #muscle-text-column, #sleep-text-column{
+        width: 85%;
+    }
+    #mental-img, #immunity-img, #weight-img, #muscle-img, #sleep-img{
+        width: 70%;
+        height: 80%;
+        order: 2;
+    }
+}
+@media screen and (max-width:481px){
+    #mental-img, #immunity-img, #weight-img, #muscle-img, #sleep-img{
+        width: 80%;
+        height: 90%;
+    }
+}

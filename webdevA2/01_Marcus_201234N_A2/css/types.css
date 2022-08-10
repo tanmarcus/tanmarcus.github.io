@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vw;
+}
+.button{
+    appearance: none;
+    border: none;
+    outline: none;
+
+    display: inline-block;
+    background-color: var(--primary);
+    color: #FFF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 0px 15px;
+    align-items: center;
+}   
+.button.large{
+    font-size: 24px;
+    padding: 15px 30px;
+    width: 60%;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+.popup.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.popup-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-inner{
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 50px 30px;
+    background: #FFF;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px black;
+}
+.popup h2{
+    color: #313131;
+    font-size: 28px;
+    font-weight: 600;
+}
+.popup h3 {
+    color: #8888;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.popup p{
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.popup p:last-of-type{
+    margin-bottom: 30px;
+}
+
+#road-preview, #foldable-preview, #mountain-preview, #hybrid-preview, #ebike-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+
+@media screen and (max-width: 721px){
+    .page{
+        flex-direction: column;
+        /* margin-top: 300px; */
+    }
+    #road-preview, #foldable-preview, #mountain-preview, #hybrid-preview, #ebike-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    }
+    #road-preview, #mountain-preview, #hybrid-preview{
+        margin-bottom: 30px;
+    }
+    .bookmark{
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width:481px){
+    .bookmark{
+        margin-bottom: 150px;
+    }
+}
+
+#road-img, #foldable-img, #hybrid-img{
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+#mountain-img{
+    width: 55%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+#ebike-img{
+    width: 35%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* #road-container{
+    margin-top: 400px;
+}
+
+#header-container, #road-container, #mountain-container, #foldable-container{
+    padding: 50px;
+}
+
+#road-container, #mountain-container, #foldable-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#road-container, #mountain-container, #foldable-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#road-text-column, #mountain-text-column, #foldable-text-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+ header text bottom spaces 
+#road-header-text, #mountain-header-text, #foldable-header-text {
+    margin-bottom: 40px;
+}
+ space between subheader paragraphs 
+#road-subheader-text, #mountain-subheader-text, #foldable-subheader-text {
+    margin-bottom: 30px;
+}
+#road-img, #mountain-img, #foldable-img{
+    width: 50%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 15px;
+} */

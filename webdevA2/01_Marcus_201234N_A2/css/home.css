@@ -1,0 +1,73 @@
+#header-container, #history-container, #uses-container {
+    padding: 50px;
+}
+
+#header-container, #history-container, #uses-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#header-text-column, #history-text-column, #uses-text-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#header-img, #first-bike-img, #uses-img {
+    width: 40%;
+    height: 75%; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#history-text{
+    text-align: center;
+}
+
+#history-header-text, #uses-header-text{
+    margin-bottom: 40px;
+}
+/* space between subheader paragraphs */
+#history-subheader-text, #uses-subheader-text{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 721px) {
+    #header-container, #history-container, #uses-container{
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    #header-text-column{
+        width: 75%;
+        order: 2;
+    }
+    #history-text-column, #uses-text-column{
+        width: 75%;
+    }
+    #subheader-text{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    #header-img{
+        order: 1;
+        margin-bottom: 50px;
+        width: 60%;
+    }
+    #first-bike-img, #uses-img{
+        width: 75%;
+        height: 75%;
+        order: 2;
+    }
+}
+@media screen and (max-width: 481px){
+
+    #first-bike-img{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+}

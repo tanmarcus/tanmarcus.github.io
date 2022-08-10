@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <h1 class="nav-header">Bicycles</h1>
+          <div class="menu">
+            <a href="index.html"><span>Home</span></a>
+            <a href="types.html"><span>Bikes</span></a>
+            <a class="active" href="#components"><span>Components</span></a>
+            <a href="benefits.html"><span>Health </span></a>
+          </div>
+
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="mobile-nav">
+      <a href="index.html"><span>Home</span></a>
+      <a href="types.html"><span>Bikes</span></a>
+      <a class="active" href="#components"><span>Components</span></a>
+      <a href="benefits.html"><span>Health</span></a>
+    </nav>
+
+    <div class="container">
+      <div class="header-container">
+        <div id="header-text-column">
+          <h1 class="header-text">Bicycle Components</h1>
+          <h3 id="subheader-text">
+            Components that makes what a bike is possible.
+          </h3>
+        </div>
+      </div>
+
+      <div class="bookmark-container">
+        <a class="bookmark" href="#frame-container"><img class="bookmark" src="./images/downarrow.png"></a> 
+      </div>
+
+      <div id="frame-container" class="reveal">
+        <div id="frame-text-column">
+          <h1 id="frame-header-text">The Frame</h1>
+          <p id="frame-subheader-text">
+            The great majority of modern bicycles have a frame with upright seating that looks much like the first chain-driven bike. 
+            These upright bicycles almost always feature the diamond frame, a truss consisting of two triangles: the front triangle and 
+            the rear triangle. 
+          </p>
+          <p id="frame-subheader-text">
+            The front triangle consists of the head tube, top tube, down tube, and seat tube. The head tube contains the 
+            headset, the set of bearings that allows the fork to turn smoothly for steering and balance.
+          </p>
+        </div>
+      </div>
+      <!-- frame slideshow -->
+      <div id="slideshow"  class="reveal">
+        <div class="slider">
+          <div class="slides">
+            <!-- radio buttons start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- radio buttons end -->
+            <!-- slide images start -->
+            <div class="slide first">
+                <img src="images/frame.png">
+            </div>
+            <div class="slide">
+                <img src="images/mountain_frame.png">
+            </div>
+            <div class="slide">
+                <img src="images/hybrid_frame.png">
+            </div>
+            <!-- slide images end -->
+            <!-- auto nav start -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <!-- auto nav end -->
+          </div>
+          <!-- manual nav start -->
+          <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+          </div>
+          <!-- manual nav end -->
+        </div>
+        <!-- image slider end -->
+      </div>
+      <div id="drivetrain-container" class="reveal">
+        <img id="drivetrain-img" src="images/drivetrain.png"/>
+        <div id="drivetrain-text-column">
+          <h1 id="drivetrain-header-text">Drivetrain & Gearing</h1>
+          <p id="drivetrain-subheader-text">
+            The drivetrain begins with pedals which rotate the cranks, which are held in axis by the bottom bracket. Most bicycles use a chain 
+            to transmit power to the rear wheel. 
+          </p>
+          <p id="drivetrain-subheader-text">
+            Different gears and ranges of gears are appropriate for different people and styles of cycling. Multi-speed bicycles allow gear selection 
+            to suit the circumstances: a cyclist could use a high gear when cycling downhill, a medium gear when cycling on a flat road, and a low gear 
+            when cycling uphill. 
+          </p>
+        </div>
+      </div>
+
+      <h1 id="wheels-tires-header" class="reveal">Wheels & Tires</h1>
+      <div id="wheels-container" class="reveal">
+        <div id="wheels-text-column">
+          <h1 id="wheels-header-text">Wheels</h1>
+          <p id="wheels-subheader-text">
+            A bicycle wheel is a wheel, most commonly a wire wheel, designed for a bicycle. A pair is often called a wheelset, especially 
+            in the context of ready built "off the shelf" performance-oriented wheels.
+          </p>
+          <p id="wheels-subheader-text">
+            Bicycle wheels are typically designed to fit into the frame and fork via dropouts, and hold bicycle tires.
+          </p>
+        </div>
+        <img id="wheels-img" src="images/wheels.jpg"/>
+      </div>
+
+      <div id="tires-container" class="reveal">
+        <div id="tires-text-column">
+          <h1 id="tires-header-text">Tires</h1>
+          <p id="tires-subheader-text">
+            A bicycle tire is a tire that fits on the wheel of a bicycle or similar vehicle. These tires may also be used on tricycles, wheelchairs, 
+            and handcycles, frequently for racing. 
+          </p>
+          <p id="tires-subheader-text">
+            Bicycle tires provide an important source of suspension, generate the lateral forces necessary for 
+            balancing and turning, and generate the longitudinal forces necessary for propulsion and braking.
+          </p>
+        </div>
+        <img id="tires-img" src="images/tires.jpg"/>
+      </div>
+    </div>
+  </body>
+</html>
