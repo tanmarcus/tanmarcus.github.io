@@ -11,25 +11,23 @@ hamburger.addEventListener("click", function () {
 window.addEventListener('scroll', reveal);
 
 function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
+    let reveals = document.querySelectorAll('.reveal');
 
-    for (var i = 0; i < reveals.length; i++) {
+    for (let i = 0; i < reveals.length; i++) {
 
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+        let windowheight = window.innerHeight;
+        let revealtop = reveals[i].getBoundingClientRect().top;
+        let revealpoint = 150;
 
         if (revealtop < windowheight - revealpoint) {
             reveals[i].classList.add('active');
-        }
-        else {
-            reveals[i].classList.remove('active');
         }
     }
 }
 
 // types.html buttons
 window.onload = () => {
+    // get const of all popup buttons
     const popup_btns = document.querySelectorAll(".popup-button");
 
     popup_btns.forEach(button => {
@@ -37,6 +35,7 @@ window.onload = () => {
             const target = e.target.dataset.target;
 
             const popup_el = document.querySelector(target);
+            // if popup exists, toggle popup to active
             if (popup_el != null) {
                 popup_el.classList.toggle("active");
             }
@@ -45,6 +44,7 @@ window.onload = () => {
 }
 
 // components.html auto slideshow
+// change slider every 2.5s
 let counter = 1;
 setInterval(function () {
     document.getElementById("radio" + counter).checked = true;
