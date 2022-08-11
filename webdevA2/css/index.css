@@ -113,7 +113,7 @@ nav {
     color: #FFF;
     margin: 0 16px;
     text-decoration: none;
-    transform: 0.5s;
+    transition: 0.5s;
     padding: 8px 16px;
     border-radius: 99px;
 }
@@ -125,11 +125,12 @@ nav {
 }
 
 /* mobile nav bar */
+/* nav bar hidden when not on mobile */
 .mobile-nav {
     display: block;
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 100%; 
     width: 100%;
     min-height: 100vh;
     z-index: 98;
@@ -137,6 +138,7 @@ nav {
     transition: 0.5s;
 }
 
+/* shift nav page out when hamburger on mobile is clicked */
 .mobile-nav.active {
     left: 0;
 }
@@ -155,7 +157,7 @@ nav {
     color: #FFF;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 541px) {
     .mobile-nav a {
         max-width: 300px;
     }
@@ -196,7 +198,6 @@ body {
     flex-direction: column;
     margin-left: 10vw;
     margin-right: 10vw;
-    /* margin-top: 10vw; */
     margin-top: 200px;
 }
 
@@ -248,7 +249,7 @@ body {
     }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 541px) {
     .container {
         margin-left: 0;
         margin-right: 0;
@@ -260,6 +261,10 @@ body {
     }
 }
 
+/* for reveal elements on scroll */
+/* when elements not in view yet, they are 150px down Y
+when scroll down far enough, fade in elements and move back
+to default pos */
 .reveal {
     position: relative;
     transform: translateY(150px);

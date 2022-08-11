@@ -2,6 +2,7 @@
     padding: 50px;
 }
 
+/* arrange elements in a row */
 #header-container, #history-container, #uses-container {
     display: flex;
     flex-direction: row;
@@ -9,7 +10,7 @@
     align-items: center;
 }
 
-
+/* arrange text elements in a column */
 #header-text-column, #history-text-column, #uses-text-column {
     display: flex;
     flex-direction: column;
@@ -35,13 +36,17 @@
     margin-bottom: 30px;
 }
 
+/* tablet mode */
 @media screen and (max-width: 721px) {
+    /* when tablet size, arrange elements in a column */
     #header-container, #history-container, #uses-container{
         flex-direction: column;
         padding: 0%;
         margin-top: 100px;
         margin-bottom: 50px;
     }
+    /* shift header text column below image */
+    /* increase width of all text columns */
     #header-text-column{
         width: 75%;
         order: 2;
@@ -53,6 +58,7 @@
         font-size: 18px;
         margin-bottom: 50px;
     }
+    /* resize images to fit screen */
     #header-img{
         order: 1;
         margin-bottom: 50px;
@@ -64,8 +70,8 @@
         order: 2;
     }
 }
-@media screen and (max-width: 481px){
-
+@media screen and (max-width: 541px){
+    /* resize image to fit screen */
     #first-bike-img{
         width: 60%;
         margin-bottom: 50px;

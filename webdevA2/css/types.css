@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* for button popups */
+/* button arrangement in a row */
 .page{
     display: flex;
     flex-direction: row;
@@ -30,6 +32,7 @@
     padding: 15px 30px;
     width: 60%;
 }
+/* for popup window */
 .popup{
     position: fixed;
     top: 0;
@@ -44,6 +47,7 @@
     pointer-events: none;
     transition: opacity 0.5s;
 }
+/* fade popup in when active */
 .popup.active{
     opacity: 1;
     pointer-events: all;
@@ -55,8 +59,10 @@
     right: 0;
     bottom: 0;
     z-index: 0;
+    /* have background be translucent when popup active */
     background-color: rgba(0, 0, 0, 0.5);
 }
+/* popup contents */
 .popup-inner{
     position: relative;
     z-index: 1;
@@ -94,17 +100,15 @@
     width: 40%;
 }
 
-
+    /* tablet mode */
 @media screen and (max-width: 721px){
+    /* arrange items in a column */
     .page{
         flex-direction: column;
         /* margin-top: 300px; */
     }
     #road-preview, #foldable-preview, #mountain-preview, #hybrid-preview, #ebike-preview{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+        width: 80%;
     }
     #road-preview, #mountain-preview, #hybrid-preview{
         margin-bottom: 30px;
@@ -113,12 +117,13 @@
         margin-bottom: 150px;
     }
 }
-@media screen and (max-width:481px){
+@media screen and (max-width:541px){
     .bookmark{
         margin-bottom: 150px;
     }
 }
 
+/* optimise images to screen size */
 #road-img, #foldable-img, #hybrid-img{
     width: 60%;
     height: 50%;
@@ -137,42 +142,3 @@
     object-fit: cover;
     border-radius: 15px;
 }
-
-
-/* #road-container{
-    margin-top: 400px;
-}
-
-#header-container, #road-container, #mountain-container, #foldable-container{
-    padding: 50px;
-}
-
-#road-container, #mountain-container, #foldable-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-#road-container, #mountain-container, #foldable-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#road-text-column, #mountain-text-column, #foldable-text-column{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
- header text bottom spaces 
-#road-header-text, #mountain-header-text, #foldable-header-text {
-    margin-bottom: 40px;
-}
- space between subheader paragraphs 
-#road-subheader-text, #mountain-subheader-text, #foldable-subheader-text {
-    margin-bottom: 30px;
-}
-#road-img, #mountain-img, #foldable-img{
-    width: 50%;
-    height: 40%;
-    object-fit: cover;
-    border-radius: 15px;
-} */
